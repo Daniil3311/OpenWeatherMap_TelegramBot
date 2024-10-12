@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      TOKEN: '6876577233:AAF9iFt6iRrsZV3SrJRiQIS9Ulr8CLduE8k'
+
+      WEATHER_API_KEY: 'c69dcb9370afbb89810c903cc1add55a'
+    restart: unless-stopped
